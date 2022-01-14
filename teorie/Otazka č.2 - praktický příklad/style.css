@@ -1,0 +1,205 @@
+/* global presets */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(50,50,50);
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+    transition: 0.3s ease-in-out;
+}
+
+ul, li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+section {
+    padding: 4rem 0;
+    height: 100vh;
+}
+
+section h2 {
+    margin-bottom: 4rem;
+    text-align: center;
+}
+
+section p {
+    line-height: 1.7rem;
+    margin-bottom: 2rem;
+    font-size: 1.1rem;
+}
+
+body.fixed-nav nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+/* HEADER */
+
+header {
+    height: 100vh;
+}
+
+header h2 {
+    text-align: center;
+    padding: 4rem 0 2rem 0;
+}
+
+/* navigation */
+
+nav {
+    width: 100%;
+    background: #add8e6;
+    z-index: 5;
+}
+
+nav .container {
+    display: flex;
+    justify-content: center;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul li a {
+    display: block;
+    padding: 1rem;
+    color: rgb(50,50,50);
+}
+
+nav ul li a:hover {
+    background: #79bfd6;
+}
+
+/* gallery */
+
+/* POZNÁMKA - Zde můžeme vidět jak se pomocí selektoru Class
+              dají vybírat elementy v HTML dokumentu hromadně a nastavit všem 
+              najednou určité vlastnosti */
+
+.gallery-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 0.5rem;
+}
+
+.gallery-wrapper .gallery-img {
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+}
+
+.gallery-wrapper .gallery-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: scale(1);
+    transition: 0.3s ease-in-out;
+}
+
+.gallery-wrapper .gallery-img img:hover {
+    transform: scale(1.1);
+}
+
+.gallery-wrapper .gallery-img .overlay {
+    position: absolute;
+    background: rgba(0,0,0,0.25);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+}
+
+.gallery-wrapper .gallery-img:hover .overlay {
+    opacity: 1;
+}
+
+.modal {
+    background: rgba(0,0,0,0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 6;
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.3s ease-in-out;
+}
+
+.modal.open {
+    opacity: 1;
+    pointer-events: all;
+}
+
+.full-size-img {
+    max-width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.5);
+    pointer-events: none;
+}
+
+.full-size-img.open {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+    pointer-events: all;
+}
+
+/* SECTION-1 */
+
+#section-1 {
+    background: lightgreen;
+}
+
+#section-1 a:hover {
+    text-decoration: underline;
+}
+
+/* SECTION-2 */
+
+#section-2 {
+    background: lightsalmon;
+}
+
+/* SECTION-3 */
+
+#section-3 {
+    background: lightcyan;
+}
+
+#section-3 a {
+    text-decoration: underline;
+}
+
+#section-3 a:hover {
+    color: darkblue;
+}
+
+
+
+

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selektory</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header id="to-the-top">
+        <nav>
+            <div class="container">
+                <ul>
+                    <li><a href="#section-1">selektor - Mřížka</a></li>
+                    <li><a href="#section-2">selektor - Tečka</a></li>
+                    <li><a href="#section-3">ostatní selektory</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="container">
+            <h2>Galerie pro ukázku využití selektorů Class</h2>
+            <div class="gallery-wrapper">
+                <div class="gallery-img">
+                    <img src="./img/bear.jpg" alt="bear" data-original="bear.jpg">
+                    <div class="overlay"></div>
+                </div>
+                <div class="gallery-img">
+                    <img src="./img/buffalo.jpg" alt="buffalo" data-original="buffalo.jpg">
+                    <div class="overlay"></div>
+                </div>
+                <div class="gallery-img">
+                    <img src="./img/cat.jpg" alt="cat" data-original="cat.jpg">
+                    <div class="overlay"></div>
+                </div>
+                <div class="gallery-img">
+                    <img src="./img/hippo.jpg" alt="bear" data-original="hippo.jpg">
+                    <div class="overlay"></div>
+                </div>
+                <div class="gallery-img">
+                    <img src="./img/lion.jpg" alt="bear" data-original="lion.jpg">
+                    <div class="overlay"></div>
+                </div>
+                <div class="gallery-img">
+                    <img src="./img/mouse.jpg" alt="bear" data-original="mouse.jpg">
+                    <div class="overlay"></div>
+                </div>
+                <div class="gallery-img">
+                    <img src="./img/dog.jpg" alt="bear" data-original="dog.jpg">
+                    <div class="overlay"></div>
+                </div>
+                <div class="gallery-img">
+                    <img src="./img/wolf.jpg" alt="bear" data-original="wolf.jpg">
+                    <div class="overlay"></div>
+                </div>
+            </div>
+            <div class="modal">
+                <img class="full-size-img" src="./img/bear.jpg" alt="">
+            </div>
+        </div>
+    </header>
+    <section id="section-1">
+        <div class="container">
+            <h2>Selektor - mřížka</h2>
+            <p>Selektor mřížka "#" vybere identifikátor "id" z HTML dokumentu</p>
+            <p>Selektor mřížka "#" pro výběr elementu pomocí identifikátoru "id" lze uplatnit pod jedním specifickým názvem pro výběr pouze jediného konkrétního elementu v HTML dokumentu, kterému je přidělen a pomocí jazyka CSS mu tak specifikovat jeho vlastnosti.</p>
+            <div class="banner">
+                <img src="./img/hash.png" alt="selektor-mřížka">
+            </div>
+        </div>
+    </section>
+    <section id="section-2">
+        <div class="container">
+            <h2>Selektor - tečka</h2>
+            <p>Selektor tečka "." vybere třídu "class" z HTML dokumentu</p> 
+            <p>Selektor tečka "." nám umožňuje vybrat třídu "class" která může být přidělena více elementům najednou a nastavit jim tak hromadně společné vlastnosti.</p>
+            <div class="banner">
+                <img src="./img/dot.jpg" alt="selektor-tečka">
+            </div>
+        </div>
+    </section>
+    <section id="section-3">
+        <div class="container">
+            <h2>Ostatní selektory</h2>
+            <p>Ostatní selektory a pseudo classes selektory jsem popsal v odpovědích na teoretické otázky v souboru "readme.md" a také jsem pro účely tohoto testu vypsal většinu tich co jsem někdy využil <a href="https://jsbin.com/zowuveg/122/edit?html,css,output" target="_blank">zde</a></p>
+            <p>Mimo jiné sem přikládám své reálné ukázky práce: <a href="https://www.vlasovestudio-bonum.cz/" target="_blank">vlasovestudio-bonum.cz</a> / <a href="https://www.solnajeskyne-pisek.cz/" target="_blank">solnajeskyne-pisek.cz</a></p>
+        </div>
+    </section>
+
+    <script src="./script.js"></script>
+</body>
+</html>
